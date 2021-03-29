@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+div {
+  background-color: black;
+}
+time {
+  font-weight: 700;
+}
+
+#stream {
+  flex: auto;
+  height: fit;
+  position: relative;
+}
+
+#twitch-button {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 10px;
+  padding-top: 12px;
+  background-color: #9147ff;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: 200ms;
+}
+#twitch-button:hover {
+  background-color: #a66bff;
+  transition: 200ms;
+}
+
+#info {
+  display: grid;
+  place-items: center;
+  background-image: url(./florida-fair-engagement-photos-jasmine-marcus-105.webp);
+  background-position: bottom;
+  background-size: cover;
+  flex: auto;
+  padding: 5px;
+  font-family: 'Co-Headline', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  height: auto;
+}
+
+#info-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.349);
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+#gifts {
+  margin-bottom: 1em;
+  font-family: 'Co-Headline', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 72, 252);
+  background: linear-gradient(
+    308deg,
+    rgb(150, 40, 148) 0%,
+    rgb(197, 105, 0) 100%
+  );
+  position: relative;
+  padding: 0.2em 1em;
+  font-weight: 900;
+  border-radius: 10em;
+  transition: transform 200ms;
+}
+#gifts:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+#gifts::after {
+  border-radius: 10em;
+  opacity: 0;
+  content: 'Wedding Gifts';
+  padding: 0.2em 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    308deg,
+    rgba(255, 135, 0, 1) 0%,
+    rgba(255, 72, 252, 1) 100%
+  );
+  transition: 300ms;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+}
+#gifts:hover::after {
+  opacity: 1;
+}

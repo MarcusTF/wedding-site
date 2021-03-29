@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Co-Headline', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./florida-fair-engagement-photos-jasmine-marcus-105.webp);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(121, 121, 121, 0.3);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.5) rgba(107, 107, 107, 0.7)
+    rgba(107, 107, 107, 0.7) rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.349);
+  border-radius: 10px;
+  padding: 30px;
+  backdrop-filter: blur(5px);
+}
+.payment-apps {
+  margin-top: 2em;
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+input[type='submit'] {
+  height: 2.5em;
+  position: relative;
+  cursor: pointer;
+  background-color: #104ba1;
+  padding: 0.1em 0.8em;
+  font-size: large;
+  color: #fff;
+  border: none;
+  border-radius: 10em;
+  transition: transform 300ms ease-in-out, box-shadow 320ms ease-in-out;
+  margin: 0.5em 0;
+}
+input[type='submit']:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+}
+
+a {
+  font-family: 'Co-Headline', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+  height: 2.5em;
+  margin: 0.5em 0;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 10em;
+  transition: transform 300ms ease-in-out, box-shadow 320ms ease-in-out;
+  cursor: pointer;
+  padding: 0.1em 1em;
+  font-size: large;
+}
+#cashapp {
+  background-color: #01c651;
+}
+#venmo {
+  background-color: #008cff;
+}
+#zelle {
+  background-color: #6d1ed4;
+}
+
+a:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.548);
+}

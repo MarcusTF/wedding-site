@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/wrm8nrm.css">
+    <link rel="stylesheet" href="./wedgift.css">
+    <title>Wedding Gifts</title>
+</head>
+
+<body>
+    <div class='content'>
+        <h1>Wedding Gifts</h1>
+        <p>If you would like to give us a gift we have included all of our payment app information below.</p>
+        <div class="payment-apps">
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="XXUXJVA59QDYQ" />
+                <input type="submit" name="submit" value="PayPal" title="Donate to our love fund with PayPal"
+                    alt="Donate to our love fund with PayPal" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+            <a id="cashapp" alt="Donate to our love fund with CashApp" title="Donate to our love fund with CashApp"
+                href="https://cash.app/$BrainKase">CashApp</a>
+            <a id="venmo" alt="Donate to our love fund with Venmo" title="Donate to our love fund with Venmo"
+                href="https://venmo.com/code?user_id=1968221779394560477">Venmo</a>
+            <a id="zelle" alt="Get our Zelle info" title="Get our Zelle info"></a>
+        </div>
+    </div>
+    <script>
+        let defaultText = 'Zelle'
+        const zelle = document.getElementById('zelle')
+        zelle.innerText = defaultText
+        zelle.onclick = () => zelle.innerText === defaultText ? zelle.innerText = "us@jasmineandmarcus.com" : zelle.innerText = defaultText
+    </script>
+</body>
+
+</html>
